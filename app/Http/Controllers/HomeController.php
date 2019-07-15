@@ -8,6 +8,7 @@ use App\Producto;
 use App\Compra;
 use App\Pago;
 use Auth; 
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -115,7 +116,14 @@ class HomeController extends Controller
     }
     public function contactenos()
     {
-        $user = Auth::user();
-        return view('contactenos',compact('user'));
+        return view('contactenos');
+    }
+    public function correo(Request $request)
+    {
+        $texto = "Nombre: {$request->nombre}<br/>Email: {$request->email}<br/>Telefono: {$request->telefono}<br/>Comentario: {$request->comentario}<br/>";
+        Mail::raw($texto, function ($message) {
+           $message->to('alejandracv9428@gmail.com')->subject('Consulta')->bcc('alonso1978@gmail.com');
+        });
+        return redirect('/contactenos');
     }
 }
