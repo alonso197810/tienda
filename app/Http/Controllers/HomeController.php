@@ -120,7 +120,7 @@ class HomeController extends Controller
     }
     public function correo(Request $request)
     {
-        $texto = "Nombre: {$request->nombre}<br/>Email: {$request->email}<br/>Telefono: {$request->telefono}<br/>Comentario: {$request->comentario}<br/>";
+        $texto = "Nombre: {$request->nombre}\nEmail: {$request->email}\nTelefono: {$request->telefono}\nComentario: {$request->comentario}";
         Mail::raw($texto, function ($message) {
            $message->to('alejandracv9428@gmail.com')->subject('Consulta')->bcc('alonso1978@gmail.com');
         });
