@@ -14,7 +14,7 @@
                             {{ csrf_field() }}
                                 <div class="row">
                                     <div class="col-12 mb-3">
-                                        <input type="text" class="form-control" name="nombre" value="nombre" placeholder="Nombre Completo" required>
+                                        <input type="text" class="form-control" name="nombre" placeholder="Nombre Completo" required>
                                     </div>
                                     <div class="col-12 mb-3">
                                         <input type="email" class="form-control" name="email" placeholder="Email" value="">
