@@ -5,7 +5,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-12">
-              <p>Aprovecha Internet para darte a conocer y para que te encuentren rápidamente. Tener una página web es un primer paso y el mas importante para tu empresa o negocio.</p>
+                <div class="card mb-3">
+                    <img src="imagenes/banner.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Misión</h5>
+                        <p class="card-text">
+                            Nuestra misión es ofrecerles el mejor producto para su hogar, donde usted y su familia se encuentren de la mejor manera posible.</p>
+                        <h5 class="card-title">Visión</h5>
+                        <p class="card-text">
+                            Ser tu primera opción de compra en productos para el hogar.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
