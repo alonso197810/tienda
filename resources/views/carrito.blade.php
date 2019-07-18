@@ -36,7 +36,7 @@
                                 <td class="qty">
                                     <div class="qty-btn d-flex">
                                         <div class="quantity">
-                                            <input type="text" class="" id="qty" disabled="disabled" step="1" min="1" max="300" name="cantidad" value="{{$compra->cantidad}}">
+                                            <input type="text" class="" id="qty" disabled="disabled" step="1" min="1" max="300" name="cantidad" value="{{$detalle->cantidad}}">
                                         </div>
                                         <a href="{{url('/borrar?detalle_id=')}}{{$detalle->id}}" class="btn btn-warning"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                     </div>
