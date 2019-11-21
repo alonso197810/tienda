@@ -9,6 +9,7 @@ use App\Compra;
 use App\Pago;
 use Auth; 
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
@@ -125,5 +126,9 @@ class HomeController extends Controller
            $message->to('alejandracv9428@gmail.com')->subject('Consulta')->bcc('alonso1978@gmail.com');
         });
         return redirect('/contactenos');
+    }
+    public function test(Request $request)
+    {
+        Log::info(json_encode($request->all()));
     }
 }

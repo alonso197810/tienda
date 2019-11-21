@@ -25,3 +25,4 @@ Route::get('/pagos', 'HomeController@pagos');
 Route::get('/nosotros', 'HomeController@nosotros');
 Route::get('/contactenos', 'HomeController@contactenos');
 Route::post('/correo', 'HomeController@correo');
+Route::post('/test', 'HomeController@test');
